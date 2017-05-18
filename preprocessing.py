@@ -28,7 +28,7 @@ for file in files:
                 print(i)
 
             reple = rating['reple']
-            score = rating['score']/10
+            score = (rating['score']-1)/9   # set range of scores to 0~1
             words = twitter.morphs(reple)
             if len(words) <= max_length and len(words) > 1:
                 ratingList[score].append(words)
