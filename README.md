@@ -16,7 +16,8 @@ jupyter notebook에서 작동이 잘 되는 것을 확인했고 이를 python �
 
 
 ## Model
-CNN을 이용한 Rigression (model.py 참조)
+* CNN을 이용한 Rigression (model.py 참조)
+* Multichannel Variable-size Convolution
 
 
 ## Dependency
@@ -42,3 +43,11 @@ CNN을 이용한 Rigression (model.py 참조)
 * 영화가 왜 이렇게 감동적이야 ㅠㅠㅠㅠ
 
 	prediction score: 0.749872
+	
+* 이 영화를 볼 바에 기부를 하겠다
+
+	prediction score: 0.330613
+	
+* 팝콘 소리 때문에 집중이 안됐다 ㅡㅡ
+
+	prediction score: 0.410676
