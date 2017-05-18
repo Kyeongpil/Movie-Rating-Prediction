@@ -5,8 +5,6 @@ import torch
 
 
 class CNNReg(nn.Module):
-    # 참조
-    # https://github.com/Shawn1993/cnn-text-classification-pytorch/blob/master/model.py
     def __init__(self, vocaNum, embedding_dim):
         super(CNNReg, self).__init__()
         self.kernel_size = [2, 3, 4, 5]
@@ -24,6 +22,7 @@ class CNNReg(nn.Module):
 
         # [(N,Channel_out,W,1), ...] * len(Kernel_size)
         feature_maps = [F.relu(conv(embed)) for conv in self.conv1]
+        
         # [(N,Channel_out,W), ...] * len(Kernel_size)
         feature_maps = [feature_map.squeeze(3) for feature_map in feature_maps]
 
